@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>IndexedDB Todo</title>
+</head>
+<body>
+  <header><h1>IndexedDB Todo</h1></header>
+  <section>
+    <h2 id="action-title">
+      Add todo
+    </h2>
+    <input id="todo-input" type="text">
+    <button id="todo-input-button">Add</button>
+  </section>
+  <section>
+    <h2>Todos</h2>
+    <div class="todos-status-block">
+      <b>Status:</b> 
+      <select id="todos-status">
+        <option value="active">active</option>
+        <option value="done">done</option>
+      </select>
+    </div>
+    <div id="todos"></div>
+  </section>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
